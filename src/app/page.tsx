@@ -12,7 +12,6 @@ import Contact from "../components/sections/Contact";
 import Head from "next/head";
 import { Translation } from "@/types/translation";
 import { FaArrowUp } from "react-icons/fa";
-import { metadata } from "./layout";
 
 type TranslationMap = {
   en: Translation;
