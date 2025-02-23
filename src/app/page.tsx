@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { keywords } from "./keywords";
 import { useTranslation } from "../context/useTranslation";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
@@ -11,10 +12,13 @@ import Contact from "../components/sections/Contact";
 import Head from "next/head";
 import { Translation } from "@/types/translation";
 import { FaArrowUp } from "react-icons/fa";
+import { metadata } from "./layout";
+
 type TranslationMap = {
   en: Translation;
   ar: Translation;
 };
+
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -79,10 +83,7 @@ const Page = () => {
           name="description"
           content="Achieve a healthy, beautiful smile with Dr. Heba Hassan! We offer comprehensive dental care, including teeth cleaning, whitening, orthodontics, gum treatments, and dental implants using the latest technology."
         />
-        <meta
-          name="keywords"
-          content="Dr,Heba Hassan Mustafa,oral surgeon,dentistry expert,implantology specialist,aesthetic dental reconstruction,dental implants Abu Dhabi,cosmetic dentistry,dental veneers"
-        />
+        <meta name="keywords" content={keywords?.join(", ") || ""} />
         <meta
           property="og:title"
           content="Advanced Dental Care | Brighten Your Smile with Dr. Heba Hassan"
@@ -101,6 +102,17 @@ const Page = () => {
           type="image/x-icon"
         />{" "}
         {/* Fallback for older browsers */}
+        <meta
+          name="google-site-verification"
+          content="googledf0c07f29961a0f4"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="googlebot"
+          content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="ar_AE" />
       </Head>
 
       <Navbar />
