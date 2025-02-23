@@ -1,0 +1,163 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "testimonials": "Testimonials"
+  },
+
+  "direction": "ltr",
+  "hero": {
+    "doctorName": "Dr. Heba Hassan Mustafa",
+    "title": "Enhancing Smiles with Expert & Trusted Dental Care",
+    "subtitle": "at Dr. Heba Hassan Clinic in Khalifa City",
+    "description": "Your smile is your signature, a reflection of your inner radiance. Experience world-class dental care in the heart of Abu Dhabi.",
+    "doctorTitle": "Renowned specialist oral surgeon with deep knowledge and expertise in dentistry",
+    "buttons": {
+      "whatsapp": "WhatsApp",
+      "call": "Call Now",
+      "instagram": "Follow Us"
+    }
+  },
+
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a wide range of services to meet your individual needs.",
+    "items": [
+      {
+        "title": "Implantology",
+        "description": "We are proud to offer NEOSS, a prestigious British implant system, renowned for its excellence and reliability. Our clinic utilizes advanced bone grafting techniques."
+      },
+      {
+        "title": "Cosmetic Services",
+        "description": "Transform your smile with our high-quality veneers. Our veneers are designed to create a flawless and natural appearance, with a 10-year guarantee."
+      },
+      {
+        "title": "Restorative Services",
+        "description": "From simple fillings to crowns and bridges, we provide high-quality restorations that look and feel natural."
+      },
+      {
+        "title": "Dental Surgery",
+        "description": "Specialized in wisdom teeth removal and complex oral surgeries with expert care and precision."
+      },
+      {
+        "title": "Oral Hygiene",
+        "description": "Regular check-ups and cleanings up to twice a year to maintain optimal oral health."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Experience exceptional dental care with our expert team dedicated to your perfect smile",
+    "doctor": {
+      "name": "Dr. Heba Hassan Mustafa",
+      "title": "Specialist Oral Surgeon",
+      "qualifications": "Master's Degree from Alexandria University, Expert Diploma in Implantology",
+      "experience": "Expert in Aesthetic Dental Reconstruction",
+      "highlights": {
+        "graduation": "Master's Degree from Alexandria University",
+        "fellowship": "Expert Diploma in Implantology",
+        "specialization": "Specialist in Aesthetic Dental Reconstruction",
+        "approach": "Meticulous and personalized treatment planning"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Patient Testimonials",
+    "description": "Discover what our patients say about their experience at Dr. Heba Hassan's Dental Clinic",
+    "items": [
+      {
+        "name": "Anju Joseph",
+        "role": "Dental Implant Patient",
+        "quote": "Dr Heba is the best dentist I had ever visited in my life. She puts maximum care to protect healthy teeth and makes sure to adopt the best and latest intervention to save the bad ones.I had best care with Dr Heba and will always choose her for the treatment.",
+        "image": null,
+        "rating": 5,
+        "date": "March 2024"
+      },
+      {
+        "name": "Jancy Victor",
+        "role": "Cosmetic Dentistry Patient",
+        "quote": "Dr Heba is very professional and friendly, one of the best Dr in Abu Dhabi. I highly recommend this doctor for dental problems.",
+        "image": "/patient-1.png",
+        "rating": 5,
+        "date": "February 2024"
+      },
+      {
+        "name": "Shaida Idris",
+        "role": "Dental Implant Patient",
+        "quote": "Dr. HEBA Indeed Professional  and attention to details Doctor . One  of the best Doctor  in Abu Dhabi.",
+        "image": null,
+        "rating": 5,
+        "date": "January 2024"
+      },
+      {
+        "name": "Khamael Al Nuaimi",
+        "role": "Dental Implant Patient",
+        "quote": "I drive from DXB especially to see Dr Heba, most professional and kind and best dentist I ever worked with  Thank you Dr Heba",
+        "image": null,
+        "rating": 5,
+        "date": "December 2023"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Visit our state-of-the-art dental clinic in the heart of Abu Dhabi",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "location": {
+      "title": "Our Location",
+      "address": "Dr. Heba Hassan Dental Clinic, Abu Dhabi, UAE",
+      "landmarks": {
+        "title": "Nearby Landmarks:",
+        "items": [
+          "5 minutes from Abu Dhabi Mall",
+          "10 minutes from Corniche Beach",
+          "Near World Trade Center Abu Dhabi"
+        ]
+      }
+    },
+    "address": "Lotus Holistic Medical Center, A-20th - Khalifa City - SE - Abu Dhabi",
+    "phone": "+971559823321",
+    "email": "hebahassan.dr99@gmail.com",
+    "social": {
+      "facebook": "https://www.facebook.com/share/1F3CAHRTVH/",
+      "instagram": "https://www.instagram.com/hebahassan.dental",
+      "whatsapp": "https://wa.me/97155982332"
+    }
+  },
+  "footer": {
+    "contactUs": "Contact Us",
+    "phone": "+971 55 982 3321",
+    "whatsapp": "WhatsApp Chat",
+    "email": "hebahassan.dr99@gmail.com",
+    "location": {
+      "title": "Location",
+      "address": [
+        "Lotus Holistic Medical Center",
+        "A-20th - Khalifa City - SE",
+        "Abu Dhabi, UAE"
+      ],
+      "nearBy": "Near Abu Dhabi Mall"
+    },
+    "followUs": "Follow Us",
+    "workingHours": {
+      "title": "Working Hours",
+      "saturday": "Saturday: Closed",
+      "weekdays": "Sunday - Friday: 10:00 AM - 8:00 PM",
+      "emergency": "Emergency Service Available 24/7"
+    },
+    "rights": "hebahassan.dental. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "sitemap": "Sitemap"
+  }
+}
