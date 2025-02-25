@@ -12,7 +12,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const locationSchema = {
   "@context": "https://schema.org",
   "@type": "Dentist",
-  name: "Dr. Heba Hassan Dental Clinic",
+  name: "Dr. Heba Hassan Dental Clinic ",
   description:
     "Advanced dental care clinic in Khalifa City offering comprehensive dental services",
   address: {
@@ -65,22 +65,10 @@ export const metadata: Metadata = {
     siteName: "Dr. Heba Hassan Dental Clinic",
     images: [
       {
-        url: `${process.env.CLINIC_WEBSITE}/affiche/affiche1.png`,
+        url: `${process.env.CLINIC_WEBSITE}/manifest.png`,
         width: 1200,
         height: 630,
-        alt: "Dental Implantology",
-      },
-      {
-        url: `${process.env.CLINIC_WEBSITE}/affiche/affiche2.png`,
-        width: 1200,
-        height: 630,
-        alt: "Cosmetic Dentistry",
-      },
-      {
-        url: `${process.env.CLINIC_WEBSITE}/affiche/affiche3.png`,
-        width: 1200,
-        height: 630,
-        alt: "Restorative Dentistry",
+        alt: "Dental Clinic in Khalifa City",
       },
     ],
     locale: "en_US",
@@ -93,16 +81,8 @@ export const metadata: Metadata = {
       "Expert dental care in Khalifa City Abu Dhabi offering implants, cosmetic dentistry, and advanced treatments. Visit our modern clinic in Khalifa City.",
     images: [
       {
-        url: `${process.env.CLINIC_WEBSITE}/Implantology.webp`,
-        alt: "Dental Implantology",
-      },
-      {
-        url: `${process.env.CLINIC_WEBSITE}/cosmetic.webp`,
-        alt: "Cosmetic Dentistry",
-      },
-      {
-        url: `${process.env.CLINIC_WEBSITE}/Restorative.webp`,
-        alt: "Restorative Dentistry",
+        url: `${process.env.CLINIC_WEBSITE}/manifest.png`,
+        alt: "Dental Clinic in Khalifa City",
       },
     ],
   },
