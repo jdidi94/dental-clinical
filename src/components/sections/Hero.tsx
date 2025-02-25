@@ -64,7 +64,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className={`text-4xl sm:text-5xl md:text-6xl font-bold mb-4 ${
+            className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4 ${
               darkMode ? "text-blue-300" : "text-blue-400"
             }`}
           >
@@ -76,7 +76,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${
+            className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4 ${
               darkMode ? "text-gray-100" : "text-white"
             }`}
           >
@@ -88,7 +88,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className={`text-xl sm:text-2xl mb-6 ${
+            className={`text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 sm:mb-4 ${
               darkMode ? "text-gray-300" : "text-gray-200"
             }`}
           >
@@ -100,7 +100,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className={`text-lg sm:text-xl mb-8 ${
+            className={`text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-8 ${
               darkMode ? "text-gray-400" : "text-gray-300"
             }`}
           >
@@ -112,13 +112,12 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1 }}
-            className={`text-lg italic ${
+            className={`text-base sm:text-lg md:text-xl lg:text-2xl italic ${
               darkMode ? "text-blue-200" : "text-blue-300"
             }`}
           >
             {t.hero.doctorTitle}
           </motion.p>
-
           {/* Social Action Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

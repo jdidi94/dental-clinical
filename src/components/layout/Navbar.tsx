@@ -10,7 +10,7 @@ import {
 import { useTheme } from "../../context/ThemeContext";
 import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
-import logo from "../../../public/logo.png";
+import logo from "../../../public/icon.png";
 import { Translation } from "@/types/translation";
 
 type TranslationMap = {

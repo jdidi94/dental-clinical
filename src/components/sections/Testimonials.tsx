@@ -130,28 +130,28 @@ const Testimonials = () => {
     <section
       id="testimonials"
       dir={t.direction}
-      className={`py-24 ${darkMode ? "bg-gray-900" : "bg-gray-50"}`}
+      className={`py-16 sm:py-24 ${darkMode ? "bg-gray-900" : "bg-gray-50"}`}
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-16"
         >
           <div
-            className={`flex items-center justify-center gap-3 mb-4 ${
+            className={`flex items-center justify-center gap-2 sm:gap-3 mb-2 sm:mb-4 ${
               isRTL ? "flex-row-start" : ""
             }`}
           >
             <FaComments
-              className={`text-4xl ${
+              className={`text-3xl sm:text-4xl ${
                 darkMode ? "text-blue-400" : "text-blue-500"
               }`}
             />
             <h2
-              className={`text-4xl font-bold ml-4 ${
+              className={`text-2xl sm:text-3xl md:text-4xl font-bold ${
                 darkMode ? "text-white" : "text-gray-900"
               }`}
             >
@@ -159,7 +159,7 @@ const Testimonials = () => {
             </h2>
           </div>
           <p
-            className={`text-xl ${
+            className={`text-base sm:text-lg md:text-xl ${
               darkMode ? "text-gray-300" : "text-gray-600"
             }`}
           >

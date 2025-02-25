@@ -57,17 +57,17 @@ const About = () => {
     <section
       id="about"
       dir={t.direction}
-      className={`py-24 ${
+      className={`py-16 sm:py-24 ${
         darkMode ? "bg-gray-900" : "bg-white"
       } transition-colors duration-300`}
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-16 space-y-4"
+          className="text-center mb-8 sm:mb-16 space-y-4"
         >
           <div
             className={`flex items-center justify-center gap-3 mb-4 ${
@@ -75,12 +75,12 @@ const About = () => {
             }`}
           >
             <FaUserMd
-              className={`text-4xl ${
+              className={`text-3xl sm:text-4xl ${
                 darkMode ? "text-blue-400" : "text-blue-500"
               }`}
             />
             <h2
-              className={`text-4xl font-bold ${
+              className={`text-3xl sm:text-4xl font-bold ${
                 darkMode ? "text-white" : "text-gray-900"
               }`}
             >
@@ -88,7 +88,7 @@ const About = () => {
             </h2>
           </div>
           <p
-            className={`text-xl max-w-2xl mx-auto ${
+            className={`text-lg sm:text-xl max-w-2xl mx-auto ${
               darkMode ? "text-gray-300" : "text-gray-600"
             }`}
           >
@@ -97,13 +97,17 @@ const About = () => {
         </motion.div>
 
         <div
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+          className={`grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center ${
             isRTL ? "direction-rtl" : ""
           }`}
         >
           {/* Text Content Column */}
-          <div className={`space-y-8 ${isRTL ? "lg:order-2" : "lg:order-1"}`}>
-            <div className="space-y-4">
+          <div
+            className={`space-y-6 sm:space-y-8 ${
+              isRTL ? "lg:order-2" : "lg:order-1"
+            }`}
+          >
+            <div className="space-y-4 sm:space-y-6">
               <motion.div
                 initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -114,13 +118,13 @@ const About = () => {
                 }`}
               >
                 <FaUserMd
-                  className={`text-3xl ${
+                  className={`text-2xl sm:text-3xl ${
                     darkMode ? "text-blue-400" : "text-blue-500"
                   }`}
                 />
                 <AnimatedText
                   text={bioData.name}
-                  className={`text-4xl font-bold ${
+                  className={`text-2xl sm:text-3xl font-bold ${
                     darkMode ? "text-white" : "text-gray-900"
                   }`}
                   delay={0.2}
@@ -129,7 +133,7 @@ const About = () => {
 
               <AnimatedText
                 text={bioData.title}
-                className={`text-2xl ${
+                className={`text-lg sm:text-2xl ${
                   darkMode ? "text-gray-300" : "text-gray-700"
                 }`}
                 delay={0.4}
@@ -137,7 +141,7 @@ const About = () => {
 
               <AnimatedText
                 text={bioData.qualifications}
-                className={`text-xl ${
+                className={`text-base sm:text-xl ${
                   darkMode ? "text-blue-400" : "text-blue-500"
                 } font-semibold`}
                 delay={0.6}
@@ -145,7 +149,7 @@ const About = () => {
 
               <AnimatedText
                 text={bioData.experience}
-                className={`text-xl ${
+                className={`text-base sm:text-xl ${
                   darkMode ? "text-gray-400" : "text-gray-600"
                 }`}
                 delay={0.8}
@@ -157,7 +161,7 @@ const About = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
               viewport={{ once: true }}
-              className="space-y-6"
+              className="space-y-4 sm:space-y-6"
             >
               {bioData.highlights.map((item, index) => (
                 <motion.div
@@ -166,23 +170,23 @@ const About = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 1 + index * 0.2 }}
                   viewport={{ once: true }}
-                  className={`flex items-center gap-4 ${
+                  className={`flex items-center gap-3 sm:gap-4 ${
                     isRTL ? "flex-row-start" : ""
                   }`}
                 >
                   <div
-                    className={`p-3 rounded-full ${
+                    className={`p-2 sm:p-3 rounded-full ${
                       darkMode ? "bg-gray-800" : "bg-gray-100"
                     }`}
                   >
                     <item.icon
-                      className={`text-xl ${
+                      className={`text-lg sm:text-xl ${
                         darkMode ? "text-blue-400" : "text-blue-500"
                       }`}
                     />
                   </div>
                   <p
-                    className={`text-lg ${
+                    className={`text-base sm:text-lg ${
                       darkMode ? "text-gray-300" : "text-gray-700"
                     }`}
                   >
@@ -195,7 +199,7 @@ const About = () => {
 
           {/* Images Column */}
           <div
-            className={`relative h-[600px] grid grid-cols-2 gap-4 ${
+            className={`relative h-[400px] sm:h-[600px] grid grid-cols-2 gap-4 ${
               isRTL ? "lg:order-1" : "lg:order-2"
             }`}
           >
@@ -204,7 +208,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
-              className="relative h-[280px] col-span-2"
+              className="relative h-[180px] sm:h-[280px] col-span-2"
             >
               <Image
                 src={doc3}
@@ -220,7 +224,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true }}
-              className="relative h-[280px]"
+              className="relative h-[180px] sm:h-[280px]"
             >
               <Image
                 src={doc1}
@@ -236,7 +240,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
               viewport={{ once: true }}
-              className="relative h-[280px]"
+              className="relative h-[180px] sm:h-[280px]"
             >
               <Image
                 src={doc2}

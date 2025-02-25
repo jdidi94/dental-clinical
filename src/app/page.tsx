@@ -1,17 +1,17 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { keywords } from "./keywords";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import { useTranslation } from "../context/useTranslation";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
-import Hero from "../components/sections/Hero";
-import Services from "../components/sections/Services";
-import About from "../components/sections/About";
 import Testimonials from "../components/sections/Testimonials";
 import Contact from "../components/sections/Contact";
-import Head from "next/head";
 import { Translation } from "@/types/translation";
 import { FaArrowUp } from "react-icons/fa";
+
+// Lazy load components
+const Hero = lazy(() => import("../components/sections/Hero"));
+const Services = lazy(() => import("../components/sections/Services"));
+const About = lazy(() => import("../components/sections/About"));
 
 type TranslationMap = {
   en: Translation;
@@ -74,51 +74,13 @@ const Page = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Head>
-        <title>
-          Advanced Dental Care | Brighten Your Smile with Dr. Heba Hassan
-        </title>
-        <meta
-          name="description"
-          content="Achieve a healthy, beautiful smile with Dr. Heba Hassan! We offer comprehensive dental care, including teeth cleaning, whitening, orthodontics, gum treatments, and dental implants using the latest technology."
-        />
-        <meta name="keywords" content={keywords?.join(", ") || ""} />
-        <meta
-          property="og:title"
-          content="Advanced Dental Care | Brighten Your Smile with Dr. Heba Hassan"
-        />
-        <meta
-          property="og:description"
-          content="Achieve a healthy, beautiful smile with Dr. Heba Hassan! Experience professional and comfortable dental care in a friendly environment."
-        />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://hebahassan.dental/" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />{" "}
-        {/* Reference the SVG favicon */}
-        <link
-          rel="alternate icon"
-          href="/favicon.ico"
-          type="image/x-icon"
-        />{" "}
-        {/* Fallback for older browsers */}
-        <meta
-          name="google-site-verification"
-          content="googledf0c07f29961a0f4"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta
-          name="googlebot"
-          content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
-        />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="ar_AE" />
-      </Head>
-
       <Navbar />
       <main className="flex-grow">
-        <Hero />
-        <About />
-        <Services />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Hero />
+          <About />
+          <Services />
+        </Suspense>
         <Testimonials />
         <Contact />
       </main>

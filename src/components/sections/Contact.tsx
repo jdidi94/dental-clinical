@@ -89,17 +89,17 @@ const Contact = () => {
           className="text-center mb-16 space-y-4"
         >
           <div
-            className={`flex items-center justify-center gap-3 mb-4 ${
+            className={`flex items-center justify-center gap-2 sm:gap-3 mb-2 sm:mb-4 ${
               isRTL ? "flex-row-start" : ""
             }`}
           >
             <FaEnvelope
-              className={`text-4xl ${
+              className={`text-3xl sm:text-4xl ${
                 darkMode ? "text-blue-400" : "text-blue-500"
               }`}
             />
             <h2
-              className={`text-4xl font-bold ${
+              className={`text-2xl sm:text-3xl md:text-4xl font-bold ${
                 darkMode ? "text-white" : "text-gray-900"
               }`}
             >
@@ -107,7 +107,7 @@ const Contact = () => {
             </h2>
           </div>
           <p
-            className={`text-xl max-w-2xl mx-auto ${
+            className={`text-base sm:text-lg md:text-xl max-w-2xl mx-auto ${
               darkMode ? "text-gray-300" : "text-gray-600"
             }`}
           >

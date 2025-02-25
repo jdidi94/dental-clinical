@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hebahassan.dental
+
+# Sitemaps
+Sitemap: https://hebahassan.dental/sitemap.xml
