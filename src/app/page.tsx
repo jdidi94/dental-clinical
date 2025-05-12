@@ -1,23 +1,21 @@
 "use client";
-import React, { useEffect, useState, lazy, Suspense } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "../context/useTranslation";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import Hero from "../components/sections/Hero";
+import Services from "../components/sections/Services";
+import About from "../components/sections/About";
 import Testimonials from "../components/sections/Testimonials";
 import Contact from "../components/sections/Contact";
 import { Translation } from "@/types/translation";
 import { FaArrowUp } from "react-icons/fa";
-
-// Lazy load components
-const Hero = lazy(() => import("../components/sections/Hero"));
-const Services = lazy(() => import("../components/sections/Services"));
-const About = lazy(() => import("../components/sections/About"));
+// Removed import for Head from next/head
 
 type TranslationMap = {
   en: Translation;
   ar: Translation;
 };
-
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -74,13 +72,12 @@ const Page = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Removed Head component and all its contents */}
       <Navbar />
       <main className="flex-grow">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Hero />
-          <About />
-          <Services />
-        </Suspense>
+        <Hero />
+        <About />
+        <Services />
         <Testimonials />
         <Contact />
       </main>
